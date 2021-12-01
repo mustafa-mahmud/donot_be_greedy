@@ -1,8 +1,11 @@
-function rollDice() {
+export let currentDice;
+
+export function rollDice() {
   const dice = [...document.querySelectorAll('.die-list')];
   dice.forEach((die) => {
     toggleClasses(die);
-    die.dataset.roll = getRandomNumber(1, 6);
+    currentDice = getRandomNumber(1, 6);
+    die.dataset.roll = currentDice;
   });
 }
 
@@ -16,5 +19,3 @@ function getRandomNumber(min, max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
-document.getElementById('roll-button').addEventListener('click', rollDice);

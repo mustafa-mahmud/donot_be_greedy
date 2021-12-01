@@ -48,13 +48,17 @@ body {
 	height: 20%;
 	display: flex;
 	align-items: center;
-	font-size: 40px;
+	font-size: 30px;
 	color: #008;
 }
 
+.total strong {
+	font-size: 50px;
+}
+
 .waiting {
-	width: 15%;
-	height: 15%;
+	width: 80px;
+	height: 80px;
 	padding: 20px;
 	border: 1px solid #333;
 	font-size: 40px;
@@ -71,6 +75,10 @@ h2 span {
 	height: 10px;
 	display: inline-block;
 	border-radius: 50%;
+	background-color: transparent;
+}
+
+h2 span.active {
 	background-color: #fff;
 }
 
@@ -321,4 +329,8 @@ button:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+button:active {
+	transform: scale(0.95);
 }
