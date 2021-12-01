@@ -14,7 +14,7 @@ const getNumbersEl = document.getElementById('get-button');
 let activePlayer = 1;
 let waitingNumbers = 0;
 let total = 0;
-const winScore = 10;
+const winScore = 100;
 const audio = new Audio('./bell.wav');
 
 function incWaiting(dice) {
