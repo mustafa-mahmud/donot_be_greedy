@@ -25,13 +25,10 @@ body {
 }
 
 .dice {
-	margin-top: 100px;
-	align-items: center;
 	display: grid;
 	grid-gap: 2rem;
 	grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
 	grid-template-rows: auto;
-	justify-items: center;
 	padding: 2rem;
 	perspective: 600px;
 	flex-direction: column;
@@ -52,6 +49,7 @@ body {
 	display: flex;
 	align-items: center;
 	font-size: 40px;
+	color: #008;
 }
 
 .waiting {
@@ -74,6 +72,11 @@ h2 span {
 	display: inline-block;
 	border-radius: 50%;
 	background-color: #fff;
+}
+
+h3 {
+	margin-bottom: 50px;
+	color: #008;
 }
 
 .die-list {
